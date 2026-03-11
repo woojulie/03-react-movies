@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+## 🎬 React Movies App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+React Movies App is a web application that allows users to search and explore movies using a public movie API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Users can browse trending movies, search by title, and view detailed information about each movie such as description, rating, and release date.
 
-## React Compiler
+The project was created to practice React development, routing, API requests, and modern frontend architecture.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🔗 Live Demo
+https://03-react-movies-five-lime.vercel.app/
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔗 GitHub Repository
+https://github.com/yuliiapazushkina/03-react-movies
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠 Tech Stack
+- Frontend
+- React
+- JavaScript 
+- Libraries
+- React Router (for navigation)
+- Axios / Fetch API (for API requests)
+- Tools
+- Vite
+- Git
+- GitHub
+- Deployment
+-Vercel
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ Key Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+✔ Search movies by title
+✔ Browse popular or trending movies
+✔ View detailed movie information
+✔ Navigation between pages using React Router
+✔ Dynamic API requests to fetch movie data
+✔ Responsive interface
+✔ Clean and modular React architecture
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Movie applications typically fetch movie data such as titles, posters, ratings, and descriptions through APIs like TMDB, allowing users to search and explore large movie databases.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+📂 Project Structure
+src
+ ├── components
+ │    ├── MovieList
+ │    ├── MovieCard
+ │    └── SearchBar
+ │
+ ├── pages
+ │    ├── HomePage
+ │    ├── MoviesPage
+ │    └── MovieDetailsPage
+ │
+ ├── services
+ │    └── api.js
+ │
+ ├── App.jsx
+ ├── main.jsx
+ └── styles.css
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The project separates UI components, pages, and API logic, making the application easier to maintain and scale.
+
+## 💻 Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/yuliiapazushkina/03-react-movies.git
+2️⃣ Navigate to the project folder
+cd 03-react-movies
+3️⃣ Install dependencies
+npm install
+4️⃣ Run the development server
+npm run dev
+
+## 🎯 Learning Goals
+
+This project helped practice:
+
+- React component architecture
+- API requests and data fetching
+- Client-side routing with React Router
+- Handling asynchronous data
+- Organizing scalable React projects
+- Deployment with Vercel
+
+## 👩‍💻 Author
+
+## Yuliia Pazushkina
+
+GitHub: https://github.com/yuliiapazushkina
+LinkedIn: https://www.linkedin.com/in/yuliia-pazushkina/
